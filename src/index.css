@@ -9,23 +9,22 @@ html {
 @font-face {
     font-family: 'Lato';
     src: url("../public/fonts/Lato-Regular.ttf") format("truetype");
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Lato';
-    src: url("../public/fonts/Lato-BoldItalic.ttf") format("truetype");
-    font-weight: 900;
-    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Lato';
     src: url("../public/fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../public/fonts/Lato-Black.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -33,8 +32,32 @@ html {
 
 @font-face {
     font-family: 'Lato';
-    src: url("../public/fonts/Lato-Italic.ttf") format("truetype");
-    font-weight: 700;
+    src: url("../public/fonts/Lato-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
     font-style: italic;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../public/fonts/Lato-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../public/fonts/Lato-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 7;
+  }
