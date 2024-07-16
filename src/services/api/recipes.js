@@ -5,7 +5,7 @@ export const recipes = [
         description: "Chilean Pastel de Choclo is an iconic dish—a classic during the summertime. The traditional Pastel de Choclo is usually cooked in a clay dish inside a wood-burning oven if living in the countryside. A standard oven and a baking pan are enough if residing in the city. ",
         country: "Chile",
         flag: "🇨🇱",
-        image: "/public/images/recipes/pastel-de-choclo.webp",
+        image: "/images/recipes/pastel-de-choclo.webp",
         categories: ["beef", "chicken"]
     },
     {
@@ -14,7 +14,7 @@ export const recipes = [
         description: "Empanadas de Pino are a traditional Chilean dish. They are filled with a mixture of ground beef, onions, black olives, raisins, and hard-boiled eggs. They are baked in the oven and served warm.",
         country: "Chile",
         flag: "🇨🇱",
-        image: "/public/images/recipes/empanada-de-pino.webp",
+        image: "/images/recipes/empanada-de-pino.webp",
         categories: ["beef", "chicken"]
     },
     {
@@ -23,7 +23,7 @@ export const recipes = [
         description: "Ceviche is a traditional dish from Peru. It is made with fresh fish, lime juice, onions, cilantro, and chili peppers. It is served cold and is perfect for a hot summer day.",
         country: "Peru",
         flag: "🇵🇪",
-        image: "/public/images/recipes/ceviche.webp",
+        image: "/images/recipes/ceviche.webp",
         categories: ["seafood"]
     },
     {
@@ -32,7 +32,7 @@ export const recipes = [
         description: "Lomo Saltado is a traditional Peruvian dish. It is made with beef, onions, tomatoes, and french fries. It is served with rice and is perfect for a hearty meal.",
         country: "Peru",
         flag: "🇵🇪",
-        image: "/public/images/recipes/lomo-saltado.webp",
+        image: "/images/recipes/lomo-saltado.webp",
         categories: ["beef"]
     },
     {
@@ -41,7 +41,7 @@ export const recipes = [
         description: "Pizza Margherita is a traditional Italian dish. It is made with tomatoes, mozzarella cheese, and basil. It is baked in the oven and is perfect for a quick and easy meal.",
         country: "Italy",
         flag: "🇮🇹",
-        image: "/public/images/recipes/pizza-margherita.webp",
+        image: "/images/recipes/pizza-margherita.webp",
         categories: ["vegetarian"]
     },
     {
@@ -50,7 +50,7 @@ export const recipes = [
         description: "Makkaronilaatikko is a traditional Finnish dish. It is made with macaroni, ground beef, onions, and cheese. It is baked in the oven and is perfect for a hearty meal.",
         country: "Finland",
         flag: "🇫🇮",
-        image: "/public/images/recipes/makkaronilaatikko.webp",
+        image: "/images/recipes/makkaronilaatikko.webp",
         categories: ["beef"]
     },
     {
@@ -59,7 +59,7 @@ export const recipes = [
         description: "Tortilla de Patatas is a traditional Spanish dish. It is made with potatoes, eggs, and onions. It is cooked in a pan and is perfect for a quick and easy meal.",
         country: "Spain",
         flag: "🇪🇸",
-        image: "/public/images/recipes/tortilla-de-patatas.webp",
+        image: "/images/recipes/tortilla-de-patatas.webp",
         categories: ["vegetarian"]
     }
 ]

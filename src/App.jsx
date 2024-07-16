@@ -1,6 +1,7 @@
 import { Header } from "./components/header/Header";
 import { CategoriseSlider } from "./components/slider/CategoriesSlider";
 import { LastestRecipes } from "./components/recipes/lastestRecipes";
+import { Footer } from "./components/footer/Footer";
 
 import "./index.css";
 
@@ -12,6 +13,7 @@ function App() {
         <CategoriseSlider />
         <LastestRecipes />
       </main>
+      <Footer />
     </>
   );
 }

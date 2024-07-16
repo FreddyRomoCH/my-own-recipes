@@ -1,6 +1,6 @@
 export function CardSlider({ title, image, href }) {
   return (
-    <li className="relative w-[400px] overflow-hidden group">
+    <li className="relative w-[400px] overflow-hidden group" key={title}>
       <a href={href}>
         <h3 className="relative flex z-10 text-sky-950 bg-sky-200/65 justify-center p-2">
           {title}

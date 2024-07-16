@@ -32,7 +32,7 @@ html {
 
 @font-face {
     font-family: 'Lato';
-    src: url("../public/fonts/Lato-BlackItalic.ttf") format("truetype");
+    src: url("/fonts/Lato-BlackItalic.ttf") format("truetype");
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -40,7 +40,7 @@ html {
 
 @font-face {
     font-family: 'Lato';
-    src: url("../public/fonts/Lato-Light.ttf") format("truetype");
+    src: url("/fonts/Lato-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -48,7 +48,7 @@ html {
 
 @font-face {
     font-family: 'Lato';
-    src: url("../public/fonts/Lato-LightItalic.ttf") format("truetype");
+    src: url("/fonts/Lato-LightItalic.ttf") format("truetype");
     font-weight: 300;
     font-style: italic;
     font-display: swap;

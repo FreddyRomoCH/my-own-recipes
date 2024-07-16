@@ -1,11 +1,11 @@
 import { useRef } from "react";
 import { CardSlider } from "./CardSlider";
 import { LeftArrow, RightArrow } from "./Arrows";
-
-import { categories } from "../../services/categories";
+import { useGetCategories } from "../../hooks/useGetCategories.js";
 
 export function CategoriseSlider() {
   const scrollRef = useRef(null);
+  const { listAllCategories } = useGetCategories();
 
   const handleClickLeft = () => {
     if (scrollRef.current) {
@@ -43,20 +43,32 @@ export function CategoriseSlider() {
   };
 
   return (
-    <div className="relative flex items-center my-5">
-      <button onClick={handleClickLeft} className="absolute left-0 z-10">
-        <LeftArrow />
-      </button>
-      <div ref={scrollRef} className="flex overflow-x-hidden animate-carousel">
-        <ul className="relative flex flex-row gap-3 [&>li]:min-h-80 [&>li]:w-64">
-          {categories.map(({ title, image, href }, index) => (
-            <CardSlider key={index} title={title} image={image} href={href} />
-          ))}
-        </ul>
-      </div>
-      <button onClick={handleClickRight} className="absolute right-0 z-10">
-        <RightArrow />
-      </button>
+    <div className="relative flex items-center my-8 justify-center">
+      {listAllCategories.length > 0 && (
+        <>
+          <button onClick={handleClickLeft} className="absolute left-0 z-10">
+            <LeftArrow />
+          </button>
+          <div
+            ref={scrollRef}
+            className="flex overflow-x-hidden animate-carousel"
+          >
+            <ul className="relative flex flex-row gap-3 [&>li]:min-h-80 [&>li]:w-64">
+              {listAllCategories.map(({ title, image, href }, index) => (
+                <CardSlider
+                  key={index}
+                  title={title}
+                  image={image}
+                  href={href}
+                />
+              ))}
+            </ul>
+          </div>
+          <button onClick={handleClickRight} className="absolute right-0 z-10">
+            <RightArrow />
+          </button>
+        </>
+      )}
     </div>
   );
 }
