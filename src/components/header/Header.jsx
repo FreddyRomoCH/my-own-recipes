@@ -1,21 +1,28 @@
-import RecipesLogo from "../../assets/icons/logo.svg";
+import { RecipesLogo } from "./RecipesLogo.jsx";
 import { Navs } from "./Navs.jsx";
-import { useGetCategories } from "../../hooks/useGetCategories.js";
-import { useGetCountries } from "../../hooks/useGetCountries.js";
+import { Search } from "../search/Search.jsx";
+import { useGetCategories } from "../../hooks/useCategories.js";
+import { useGetCountries } from "../../hooks/useCountries.js";
+import { Debugger } from "../Debugger.jsx";
+import { IS_DEVELOPMENT } from "../../config.js";
 
 export function Header() {
-  const { listAllCategories } = useGetCategories();
+  const { listCategorties } = useGetCategories();
   const { listAllCountries } = useGetCountries();
 
   return (
     <header className="relative flex flex-row flex-wrap justify-between items-center content-center w-full p-4 text-sky-950 text-sm bg-gradient-to-b from-sky-100 to-sky-200">
+      {IS_DEVELOPMENT && <Debugger />}
+
       <nav className="flex-1">
         <ul className="relative flex flex-row justify-center gap-5 items-center">
           <Navs href="/recipes" title="All Recipes" id="all-recipes">
-            {listAllCategories.length > 0 ? (
-              listAllCategories.map((category) => {
+            {listCategorties.length > 0 ? (
+              listCategorties.map((category) => {
                 const { title, href, id } = category;
-                return <Navs title={title} href={href} id={id} key={title} />;
+                return (
+                  <Navs title={title} href={href} key={`category-${id}`} />
+                );
               })
             ) : (
               <Navs title="No categories to show" />
@@ -26,7 +33,9 @@ export function Header() {
             {listAllCountries.length > 0 ? (
               listAllCountries.map((country) => {
                 const { name, link, short } = country;
-                return <Navs title={name} href={link} id={short} key={short} />;
+                return (
+                  <Navs title={name} href={link} key={`category-${short}`} />
+                );
               })
             ) : (
               <Navs title="No countries to show" />
@@ -34,24 +43,14 @@ export function Header() {
           </Navs>
         </ul>
       </nav>
-      <picture>
-        <a href="/">
-          <img
-            className="w-24 shadow-lg shadow-sky-700 rounded-full"
-            src={RecipesLogo}
-            alt="Recipe Logo"
-          />
-        </a>
-      </picture>
+
+      <RecipesLogo />
+
       <nav className="flex-1">
         <ul className="relative flex flex-row justify-center gap-5 items-center">
-          <Navs href="/add-recipe" title="Add Recipe" id="add-recipe" />
-          <Navs href="/sign-in" title="Sign In" id="sign-in" />
-          <input
-            className="rounded-md p-1 text-sky-950 border-2 border-transparent focus:border-sky-600 focus:ring-0 focus:outline-none box-border"
-            type="text"
-            placeholder="Search..."
-          />
+          <Navs href="/add-recipe" title="Add Recipe" key="add-recipe" />
+          <Navs href="/sign-in" title="Sign In" key="sign-in" />
+          <Search />
         </ul>
       </nav>
     </header>

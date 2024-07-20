@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { countries } from "../services/api/countries.js";
 
 export function useGetCountries() {

@@ -3,15 +3,15 @@ import { useState, useEffect } from "react";
 import { categories } from "../services/api/categories.js";
 
 export function useGetCategories() {
-    const [listAllCategories, setListAllCategories] = useState([]);
+    const [listCategorties, setlistCategorties] = useState([]);
   
     useEffect(() => {
       const allCategories = categories.map((category) => {
         return category;
       });
   
-      setListAllCategories(allCategories);
+      setlistCategorties(allCategories);
     }, []);
   
-    return { listAllCategories };
+    return { listCategorties };
   } 

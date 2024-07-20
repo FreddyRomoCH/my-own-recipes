@@ -1,5 +1,5 @@
 import { Header } from "./components/header/Header";
-import { CategoriseSlider } from "./components/slider/CategoriesSlider";
+import { CategoriesSlider } from "./components/slider/CategoriesSlider";
 import { LastestRecipes } from "./components/recipes/lastestRecipes";
 import { Footer } from "./components/footer/Footer";
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <main className="relative max-w-6xl mx-auto">
-        <CategoriseSlider />
+        <CategoriesSlider />
         <LastestRecipes />
       </main>
       <Footer />

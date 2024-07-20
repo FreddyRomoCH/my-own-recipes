@@ -1,4 +1,4 @@
-export const recipes = [
+export const getRecipes = [
     {
         id: 1,
         name: "Pastel de Choclo",
@@ -36,7 +36,7 @@ export const recipes = [
         categories: ["beef"]
     },
     {
-        id: 4,
+        id: 5,
         name: "Pizza Margherita",
         description: "Pizza Margherita is a traditional Italian dish. It is made with tomatoes, mozzarella cheese, and basil. It is baked in the oven and is perfect for a quick and easy meal.",
         country: "Italy",
@@ -45,7 +45,7 @@ export const recipes = [
         categories: ["vegetarian"]
     },
     {
-        id: 5,
+        id: 6,
         name: "Makkaronilaatikko",
         description: "Makkaronilaatikko is a traditional Finnish dish. It is made with macaroni, ground beef, onions, and cheese. It is baked in the oven and is perfect for a hearty meal.",
         country: "Finland",
@@ -54,7 +54,7 @@ export const recipes = [
         categories: ["beef"]
     },
     {
-        id: 6,
+        id: 7,
         name: "Tortilla de Patatas",
         description: "Tortilla de Patatas is a traditional Spanish dish. It is made with potatoes, eggs, and onions. It is cooked in a pan and is perfect for a quick and easy meal.",
         country: "Spain",
