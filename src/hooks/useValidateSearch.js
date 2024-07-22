@@ -1,7 +1,7 @@
 import { useRef, useEffect, useContext } from "react";
 import { SearchContext } from "../context/searchContext";
 
-export function useSearch() {
+export function useValidateSearch() {
   // const [search, setSearch] = useState("");
   // const [error, setError] = useState(null);
   // const [isSubmitted, setIsSubmitted] = useState(false)

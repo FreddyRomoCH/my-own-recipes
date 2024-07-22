@@ -1,7 +1,8 @@
-import { useRecipes } from "../../hooks/useRecipes.js";
+import { useSearchRecipes } from "../../hooks/useSearchRecipes.js";
+import { Link } from "react-router-dom";
 
 export function SearchResults({ search }) {
-  const { recipes } = useRecipes({ search });
+  const { recipes } = useSearchRecipes({ search });
 
   return (
     <div className="results absolute top-14 z-40 w-full bg-sky-100 rounded p-3">
@@ -11,15 +12,16 @@ export function SearchResults({ search }) {
         ) : (
           recipes
             .map((recipe) => {
+              const { id, name } = recipe;
               return (
                 <li key={recipe.id}>
-                  <a
-                    href={`/${recipe.name
+                  <Link
+                    to={`/recipes/${id}/${name
                       .toLocaleLowerCase()
                       .replace(/\s+/g, "-")}`}
                   >
-                    {recipe.name}
-                  </a>
+                    {name}
+                  </Link>
                 </li>
               );
             })

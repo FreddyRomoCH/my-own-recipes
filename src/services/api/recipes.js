@@ -6,7 +6,32 @@ export const getRecipes = [
         country: "Chile",
         flag: "🇨🇱",
         image: "/images/recipes/pastel-de-choclo.webp",
-        categories: ["beef", "chicken"]
+        categories: ["beef", "chicken"],
+        servings: 6,
+        prepTime: "1h 30m",
+        ingredients: [
+            "1 cup of milk",
+            "1 cup of sugar",
+            "1 cup of cornmeal",
+            "1/2 cup of butter",
+            "1/2 teaspoon of salt",
+            "1 teaspoon of baking powder",
+            "1/2 cup of raisins",
+            "1/2 cup of black olives",
+            "1/2 cup of chicken",
+            "1/2 cup of beef",
+            "1/2 cup of hard-boiled eggs",
+            "1/2 cup of onions"
+        ],
+        instructions: [
+            "Preheat the oven to 350°F (180°C).",
+            "In a saucepan, heat the milk, sugar, cornmeal, butter, and salt over medium heat. Stir constantly until the mixture thickens.",
+            "Remove the saucepan from the heat and add the baking powder. Stir well.",
+            "In a baking pan, place a layer of the corn mixture, then add the raisins, black olives, chicken, beef, hard-boiled eggs, and onions.",
+            "Cover the filling with the remaining corn mixture.",
+            "Bake in the preheated oven for 30 minutes or until golden brown.",
+            "Serve warm and enjoy!"
+        ]
     },
     {
         id: 2,
@@ -15,7 +40,32 @@ export const getRecipes = [
         country: "Chile",
         flag: "🇨🇱",
         image: "/images/recipes/empanada-de-pino.webp",
-        categories: ["beef", "chicken"]
+        categories: ["beef", "chicken"],
+        servings: 12,
+        prepTime: "1h 30m",
+        ingredients: [
+            "1 cup of milk",
+            "1 cup of sugar",
+            "1 cup of cornmeal",
+            "1/2 cup of butter",
+            "1/2 teaspoon of salt",
+            "1 teaspoon of baking powder",
+            "1/2 cup of raisins",
+            "1/2 cup of black olives",
+            "1/2 cup of chicken",
+            "1/2 cup of beef",
+            "1/2 cup of hard-boiled eggs",
+            "1/2 cup of onions"
+        ],
+        instructions: [
+            "Preheat the oven to 350°F (180°C).",
+            "In a saucepan, heat the milk, sugar, cornmeal, butter, and salt over medium heat. Stir constantly until the mixture thickens.",
+            "Remove the saucepan from the heat and add the baking powder. Stir well.",
+            "In a baking pan, place a layer of the corn mixture, then add the raisins, black olives, chicken, beef, hard-boiled eggs, and onions.",
+            "Cover the filling with the remaining corn mixture.",
+            "Bake in the preheated oven for 30 minutes or until golden brown.",
+            "Serve warm and enjoy!"
+        ]
     },
     {
         id: 3,
@@ -24,7 +74,26 @@ export const getRecipes = [
         country: "Peru",
         flag: "🇵🇪",
         image: "/images/recipes/ceviche.webp",
-        categories: ["seafood"]
+        categories: ["seafood"],
+        servings: 4,
+        prepTime: "1h",
+        ingredients: [
+            "1 lb of fresh fish",
+            "1 cup of lime juice",
+            "1/2 cup of red onions",
+            "1/2 cup of cilantro",
+            "1/2 cup of chili peppers",
+            "1/2 cup of sweet potatoes",
+            "1/2 cup of corn",
+            "1/2 cup of lettuce"
+        ],
+        instructions: [
+            "Cut the fish into small pieces and place them in a bowl.",
+            "Add the lime juice and let it marinate for 30 minutes.",
+            "Add the red onions, cilantro, and chili peppers. Mix well.",
+            "Serve the ceviche with sweet potatoes, corn, and lettuce.",
+            "Enjoy!"
+        ]
     },
     {
         id: 4,
@@ -33,7 +102,25 @@ export const getRecipes = [
         country: "Peru",
         flag: "🇵🇪",
         image: "/images/recipes/lomo-saltado.webp",
-        categories: ["beef"]
+        categories: ["beef"],
+        servings: 4,
+        prepTime: "1h",
+        ingredients: [
+            "1 lb of beef",
+            "1/2 cup of soy sauce",
+            "1/2 cup of red onions",
+            "1/2 cup of tomatoes",
+            "1/2 cup of french fries",
+            "1/2 cup of rice"
+        ],
+        instructions: [
+            "Cut the beef into thin strips and marinate them in soy sauce for 30 minutes.",
+            "In a wok, heat some oil and stir-fry the beef until browned.",
+            "Add the red onions and tomatoes. Stir-fry for a few minutes.",
+            "Add the french fries and mix well.",
+            "Serve the lomo saltado with rice.",
+            "Enjoy!"
+        ]
     },
     {
         id: 5,
@@ -42,7 +129,24 @@ export const getRecipes = [
         country: "Italy",
         flag: "🇮🇹",
         image: "/images/recipes/pizza-margherita.webp",
-        categories: ["vegetarian"]
+        categories: ["vegetarian"],
+        servings: 4,
+        prepTime: "1h",
+        ingredients: [
+            "1 cup of flour",
+            "1/2 cup of water",
+            "1/2 cup of tomatoes",
+            "1/2 cup of mozzarella cheese",
+            "1/2 cup of basil"
+        ],
+        instructions: [
+            "Preheat the oven to 450°F (230°C).",
+            "In a bowl, mix the flour and water to make the pizza dough.",
+            "Roll out the dough on a baking sheet.",
+            "Top the dough with tomatoes, mozzarella cheese, and basil.",
+            "Bake in the preheated oven for 15 minutes or until the crust is golden brown.",
+            "Serve warm and enjoy"
+        ]
     },
     {
         id: 6,
@@ -51,7 +155,23 @@ export const getRecipes = [
         country: "Finland",
         flag: "🇫🇮",
         image: "/images/recipes/makkaronilaatikko.webp",
-        categories: ["beef"]
+        categories: ["beef"],
+        servings: 6,
+        prepTime: "1h",
+        ingredients: [
+            "1 cup of macaroni",
+            "1/2 cup of ground beef",
+            "1/2 cup of onions",
+            "1/2 cup of cheese"
+        ],
+        instructions: [
+            "Preheat the oven to 350°F (180°C).",
+            "Cook the macaroni according to the package instructions.",
+            "In a skillet, cook the ground beef and onions until browned.",
+            "In a baking dish, layer the macaroni, ground beef, and cheese.",
+            "Bake in the preheated oven for 30 minutes or until the cheese is melted.",
+            "Serve warm and enjoy!"
+        ]
     },
     {
         id: 7,
@@ -60,6 +180,69 @@ export const getRecipes = [
         country: "Spain",
         flag: "🇪🇸",
         image: "/images/recipes/tortilla-de-patatas.webp",
-        categories: ["vegetarian"]
+        categories: ["vegetarian"],
+        servings: 4,
+        prepTime: "1h",
+        ingredients: [
+            "1 cup of potatoes",
+            "1/2 cup of eggs",
+            "1/2 cup of onions"
+        ],
+        instructions: [
+            "Peel and slice the potatoes and onions.",
+            "In a skillet, cook the potatoes and onions until browned.",
+            "In a bowl, beat the eggs and add the cooked potatoes and onions.",
+            "In a pan, cook the egg mixture until set.",
+            "Serve warm and enjoy!"
+        ]
+    },
+    {
+        id: 8,
+        name: "Paella",
+        description: "Paella is a traditional Spanish dish. It is made with rice, saffron, chicken, seafood, and vegetables. It is cooked in a paella pan and is perfect for a festive meal.",
+        country: "Spain",
+        flag: "🇪🇸",
+        image: "/images/recipes/paella.webp",
+        categories: ["seafood", "chicken"],
+        servings: 6,
+        prepTime: "1h",
+        ingredients: [
+            "1 cup of rice",
+            "1/2 cup of saffron",
+            "1/2 cup of chicken",
+            "1/2 cup of seafood",
+            "1/2 cup of vegetables"
+        ],
+        instructions: [
+            "In a paella pan, heat some oil and cook the chicken until browned.",
+            "Add the seafood and vegetables. Cook until tender.",
+            "Add the rice and saffron. Cook until the rice is tender.",
+            "Serve warm and enjoy!"
+        ]
+    },
+    {
+        id: 9,
+        name: "Pulla",
+        description: "Pulla is a traditional Finnish sweet bread. It is made with flour, sugar, milk, butter, and cardamom. It is baked in the oven and is perfect for a sweet treat.",
+        country: "Finland",
+        flag: "🇫🇮",
+        image: "/images/recipes/pulla.webp",
+        categories: ["dessert"],
+        servings: 6,
+        prepTime: "1h",
+        ingredients: [
+            "1 cup of flour",
+            "1/2 cup of sugar",
+            "1/2 cup of milk",
+            "1/2 cup of butter",
+            "1/2 cup of cardamom"
+        ],
+        instructions: [
+            "Preheat the oven to 350°F (180°C).",
+            "In a bowl, mix the flour, sugar, milk, butter, and cardamom to make the dough.",
+            "Roll out the dough and shape it into a braid.",
+            "Bake in the preheated oven for 30 minutes or until golden brown.",
+            "Serve warm and enjoy!"
+        ]  
     }
 ]

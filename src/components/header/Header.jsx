@@ -1,13 +1,13 @@
 import { RecipesLogo } from "./RecipesLogo.jsx";
 import { Navs } from "./Navs.jsx";
 import { Search } from "../search/Search.jsx";
-import { useGetCategories } from "../../hooks/useCategories.js";
+import { useCategories } from "../../hooks/useCategories.js";
 import { useGetCountries } from "../../hooks/useCountries.js";
 import { Debugger } from "../Debugger.jsx";
 import { IS_DEVELOPMENT } from "../../config.js";
 
 export function Header() {
-  const { listCategorties } = useGetCategories();
+  const { listCategories } = useCategories();
   const { listAllCountries } = useGetCountries();
 
   return (
@@ -16,13 +16,11 @@ export function Header() {
 
       <nav className="flex-1">
         <ul className="relative flex flex-row justify-center gap-5 items-center">
-          <Navs href="/recipes" title="All Recipes" id="all-recipes">
-            {listCategorties.length > 0 ? (
-              listCategorties.map((category) => {
-                const { title, href, id } = category;
-                return (
-                  <Navs title={title} href={href} key={`category-${id}`} />
-                );
+          <Navs href="recipes" title="By Recipes" id="all-recipes">
+            {listCategories.length > 0 ? (
+              listCategories.map((category) => {
+                const { title, id } = category;
+                return <Navs title={title} key={`category-${id}`} />;
               })
             ) : (
               <Navs title="No categories to show" />
@@ -32,10 +30,8 @@ export function Header() {
           <Navs href="/country" title="By Country" id="by-country">
             {listAllCountries.length > 0 ? (
               listAllCountries.map((country) => {
-                const { name, link, short } = country;
-                return (
-                  <Navs title={name} href={link} key={`category-${short}`} />
-                );
+                const { name, short } = country;
+                return <Navs title={name} key={`category-${short}`} />;
               })
             ) : (
               <Navs title="No countries to show" />

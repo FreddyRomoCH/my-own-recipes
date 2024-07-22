@@ -1,8 +1,8 @@
 import { SearchResults } from "./SearchResults.jsx";
-import { useSearch } from "../../hooks/useSearch.js";
+import { useValidateSearch } from "../../hooks/useValidateSearch.js";
 
 export function Search() {
-  const { search, setSearch } = useSearch();
+  const { search, setSearch } = useValidateSearch();
 
   const handleSubmit = (event) => {
     event.preventDefault();

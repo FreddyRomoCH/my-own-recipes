@@ -4,30 +4,25 @@ export const categories = [
         id:"1",
         title: "Chicken",
         image: "/images/categories/chicken-recipes.webp",
-        href: "/recipes/chicken",
     },
     {
         id:"2",
         title: "Beef",
         image: "/images/categories/beef-recipes.webp",
-        href: "/recipes/beef",
     },
     {
         id:"3",
         title: "Vegetarian",
         image: "/images/categories/vegetarian-recipes.webp",
-        href: "/recipes/vegetarian",
     },
     {
         id:"4",
-        title: "Sea Food",
+        title: "Seafood",
         image: "/images/categories/seafood-recipes.webp",
-        href: "/recipes/seafood",
     },
     {
         id:"5",
-        title: "Desserts",
+        title: "Dessert",
         image: "/images/categories/desserts-recipes.webp",
-        href: "/recipes/desserts",
     },
   ];

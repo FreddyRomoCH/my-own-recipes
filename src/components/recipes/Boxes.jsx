@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Boxes({ title, desc, image, categories, id, flag }) {
   return (
     <div
@@ -11,9 +13,11 @@ export function Boxes({ title, desc, image, categories, id, flag }) {
             {categories.map((category) => {
               return (
                 <li key={category} className="text-sm">
-                  <span className=" font-thin text-sky-100 italic">
-                    {category}
-                  </span>
+                  <Link to={`/category/${category}`}>
+                    <span className=" font-thin text-sky-100 italic">
+                      {category}
+                    </span>
+                  </Link>
                 </li>
               );
             })}
@@ -33,9 +37,12 @@ export function Boxes({ title, desc, image, categories, id, flag }) {
         <p className="text-sky-950 font-thin line-clamp text-sm italic">
           {desc}
         </p>
-        <button className="bg-sky-800 text-sky-100 rounded-md p-2 hover:bg-sky-950">
+        <Link
+          to={`/recipes/${id}/${title.toLowerCase().replace(/\s/g, "-")}`}
+          className="bg-sky-800 text-sky-100 rounded-md p-2 hover:bg-sky-950"
+        >
           Read More
-        </button>
+        </Link>
       </div>
     </div>
   );

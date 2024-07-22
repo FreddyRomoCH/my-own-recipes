@@ -2,16 +2,16 @@ import { useState, useEffect } from "react";
 
 import { categories } from "../services/api/categories.js";
 
-export function useGetCategories() {
-    const [listCategorties, setlistCategorties] = useState([]);
+export function useCategories() {
+    const [listCategories, setListCategories] = useState([]);
   
     useEffect(() => {
       const allCategories = categories.map((category) => {
         return category;
       });
   
-      setlistCategorties(allCategories);
+      setListCategories(allCategories);
     }, []);
   
-    return { listCategorties };
+    return { listCategories };
   } 

@@ -1,7 +1,9 @@
-export function CardSlider({ title, image, href }) {
+import { Link } from "react-router-dom";
+
+export function CardSlider({ title, image }) {
   return (
     <li className="relative w-[400px] overflow-hidden group" key={title}>
-      <a href={href}>
+      <Link to={`category/${title.toLowerCase().replace(/\s+/g, "-")}`}>
         <h3 className="relative flex z-10 text-sky-950 bg-sky-200/65 justify-center p-2">
           {title}
         </h3>
@@ -12,7 +14,7 @@ export function CardSlider({ title, image, href }) {
             alt={`${title} recipe`}
           />
         </picture>
-      </a>
+      </Link>
     </li>
   );
 }
