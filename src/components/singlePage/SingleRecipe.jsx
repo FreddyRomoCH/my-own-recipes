@@ -44,8 +44,10 @@ export function SingleRecipe() {
           key={`intruction-${index}`}
           className="flex flex-row justify-start gap-4 items-center"
         >
-          <span className="text-lg font-semibold">{`Step ${index + 1}:`}</span>
-          <p>{instruction}</p>
+          <span className="text-lg font-semibold flex-shrink">{`Step ${
+            index + 1
+          }:`}</span>
+          <p className="flex-1">{instruction}</p>
         </li>
       );
     });
@@ -100,12 +102,12 @@ export function SingleRecipe() {
             <ul className="grow flex flex-col gap-4 p-4 box-border rounded font-thin">
               <li>
                 <span className="font-semibold text-lg">Instructions:</span>
-                {listOfInstructions ? (
-                  listOfInstructions
-                ) : (
-                  <li>No instructions added yet</li>
-                )}
               </li>
+              {listOfInstructions ? (
+                listOfInstructions
+              ) : (
+                <li>No instructions added yet</li>
+              )}
             </ul>
           </div>
         </section>

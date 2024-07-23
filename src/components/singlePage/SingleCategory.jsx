@@ -5,7 +5,6 @@ import { NoCategoriesToShow } from "../NoCategoriesToShow.jsx";
 
 export function SingleCategory() {
   const { name } = useParams();
-  console.log(name);
   const categoryName = name.charAt(0).toUpperCase() + name.slice(1);
 
   const { recipes } = useGetRecipes({ category: name });
@@ -33,7 +32,8 @@ export function SingleCategory() {
           <h2 className="text-sky-950 font-bold text-3xl my-6 text-center">
             {categoryName} Recipes
           </h2>
-          <div className="relative grid grid-cols-4 grid-rows-1 w-full mx-auto my-0 gap-3 mb-6">
+          {/* <div className="relative grid grid-cols-4 grid-rows-1 w-full mx-auto my-0 gap-3 mb-6"> */}
+          <div className="grid grid-cols-boxes gap-4 mb-6 w-full">
             {recipeList}
           </div>
         </>

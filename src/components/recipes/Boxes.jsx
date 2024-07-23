@@ -4,7 +4,7 @@ export function Boxes({ title, desc, image, categories, id, flag }) {
   return (
     <div
       key={id}
-      className="box w-full relative flex flex-col justify-center shadow-sm shadow-sky-950 rounded-lg group"
+      className="box w-full relative flex flex-col justify-center shadow-sm shadow-sky-950 rounded-lg group overflow-hidden"
     >
       <div className="relative h-40 overflow-hidden">
         <div className="absolute z-10 top-[-100%] left-0 bg-sky-800/75 w-full flex flex-row flex-nowrap items-center justify-between px-1 group-hover:top-0 transition-[top] duration-500 ease-out">

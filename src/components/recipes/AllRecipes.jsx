@@ -31,7 +31,7 @@ export function AllRecipes() {
           <h2 className="text-sky-950 font-bold text-3xl my-6 text-center">
             All Recipes
           </h2>
-          <div className="relative grid grid-cols-4 grid-rows-1 w-full mx-auto my-0 gap-3 mb-6">
+          <div className="grid grid-cols-boxes gap-4 mb-6 w-full">
             {recipesList}
           </div>
         </>
