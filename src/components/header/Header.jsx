@@ -38,6 +38,8 @@ export function Header() {
                 <Navs title="No countries to show" />
               )}
             </Navs>
+
+            <Navs href="/add-recipe" title="Add Recipe" key="add-recipe" />
           </ul>
         </nav>
 
@@ -45,9 +47,11 @@ export function Header() {
 
         <nav className="flex-1">
           <ul className="relative flex flex-row justify-center gap-5 items-center">
-            <Navs href="/add-recipe" title="Add Recipe" key="add-recipe" />
-            <Navs href="/sign-in" title="Sign In" key="sign-in" />
             <Search />
+
+            <Navs href="/sign-in" title="Sign In" key="sign-in" />
+
+            <li className="group font-medium italic py-3 text-lg">{`Hi {User}`}</li>
           </ul>
         </nav>
       </div>
